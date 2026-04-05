@@ -2,7 +2,7 @@ name: Publish Scheduled Articles
 
 on:
   schedule:
-    - cron: '0 14 * * *'  # Runs every day at 9am Central Time (14:00 UTC)
+    - cron: '17 14 * * *'  # 9:17am Central Time daily
   workflow_dispatch:        # Also lets you trigger it manually from GitHub
 
 jobs:
