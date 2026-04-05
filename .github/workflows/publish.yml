@@ -1,0 +1,81 @@
+name: Publish Scheduled Articles
+
+on:
+  schedule:
+    - cron: '0 14 * * *'  # Runs every day at 9am Central Time (14:00 UTC)
+  workflow_dispatch:        # Also lets you trigger it manually from GitHub
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Publish articles due today
+        run: |
+          TODAY=$(date -u '+%Y-%m-%d')
+          echo "Today's date: $TODAY"
+
+          PUBLISHED=0
+
+          if [ -d "scheduled" ]; then
+            for file in scheduled/*.html; do
+              [ -f "$file" ] || continue
+
+              FILENAME=$(basename "$file")
+
+              # Extract date prefix — first 10 characters (YYYY-MM-DD)
+              FILE_DATE=$(echo "$FILENAME" | cut -c1-10)
+
+              # Validate it looks like a date
+              if ! echo "$FILE_DATE" | grep -qE '^[0-9]{4}-[0-9]{2}-[0-9]{2}$'; then
+                echo "Skipping $FILENAME — no valid date prefix"
+                continue
+              fi
+
+              # Compare as strings — YYYY-MM-DD sorts correctly alphabetically
+              if [ "$FILE_DATE" \<= "$TODAY" ]; then
+                echo "Publishing: $FILENAME (scheduled for $FILE_DATE)"
+
+                # Strip date prefix + hyphen (11 characters) to get clean slug
+                SLUG=$(echo "$FILENAME" | cut -c12-)
+
+                # Copy to blog/ with clean name, remove from scheduled/
+                cp "$file" "blog/$SLUG"
+                rm "$file"
+
+                echo "Published as: blog/$SLUG"
+                PUBLISHED=$((PUBLISHED + 1))
+
+                # Add to sitemap if slug not already there
+                SLUG_URL="https://vadisability.org/blog/$SLUG"
+                if ! grep -q "$SLUG" sitemap.xml; then
+                  sed -i "s|</urlset>|  <url>\n    <loc>$SLUG_URL</loc>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>\n</urlset>|" sitemap.xml
+                  echo "Added to sitemap: $SLUG_URL"
+                fi
+              else
+                echo "Not yet due: $FILENAME (scheduled for $FILE_DATE)"
+              fi
+            done
+          else
+            echo "No scheduled folder found"
+            mkdir -p scheduled
+          fi
+
+          echo "Articles published today: $PUBLISHED"
+
+          if [ "$PUBLISHED" -gt 0 ]; then
+            git config user.name "VA Disability Hub Bot"
+            git config user.email "action@github.com"
+            git add blog/ sitemap.xml scheduled/
+            git commit -m "Published $PUBLISHED article(s) for $TODAY"
+            git push
+            echo "Deployed successfully"
+          else
+            echo "Nothing to publish today"
+          fi
