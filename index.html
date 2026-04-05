@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6550783064044463" crossorigin="anonymous"></script>
+    <meta name="google-adsense-account" content="ca-pub-6550783064044463">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VA Disability Hub — Ratings, Pay & Benefits for Veterans</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0D1F3C;
+    --navy-mid: #152d52;
+    --gold: #C9A84C;
+    --gold-light: #e8c96a;
+    --gold-pale: #f5e9c4;
+    --cream: #F9F5EE;
+    --smoke: #EEE9E0;
+    --steel: #4A5568;
+    --text: #1a2535;
+    --muted: #7A8899;
+    --red: #C0392B;
+    --green: #1a6b3c;
+    --green-bg: #e8f5ee;
+    --radius: 12px;
+    --shadow: 0 4px 24px rgba(13,31,60,0.10);
+    --shadow-lg: 0 12px 48px rgba(13,31,60,0.18);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html { scroll-behavior: smooth; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--text);
+    line-height: 1.6;
+    font-size: 16px;
+  }
+
+  /* ── NAV ── */
+  nav {
+    background: var(--navy);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 64px;
+    box-shadow: 0 2px 16px rgba(0,0,0,0.25);
+  }
+  .nav-logo {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 800;
+    font-size: 1.2rem;
+    color: #fff;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .nav-logo span {
+    color: var(--gold);
+  }
+  .star-icon {
+    width: 28px; height: 28px;
+    fill: var(--gold);
+  }
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+  }
+  .nav-links a {
+    color: rgba(255,255,255,0.75);
+    text-decoration: none;
+    font-size: 0.88rem;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+    transition: color 0.2s;
+  }
+  .nav-links a:hover { color: var(--gold); }
+
+  /* ── HERO ── */
+  .hero {
+    background: var(--navy);
+    color: #fff;
+    padding: 5rem 2rem 4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(ellipse 80% 60% at 60% 0%, rgba(201,168,76,0.12) 0%, transparent 70%),
+                radial-gradient(ellipse 50% 80% at 0% 100%, rgba(201,168,76,0.07) 0%, transparent 60%);
+    pointer-events: none;
+  }
+  .hero-grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+  }
+  .hero-badge {
+    display: inline-block;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.35);
+    color: var(--gold-light);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 50px;
+    margin-bottom: 1.2rem;
+  }
+  .hero h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(2rem, 4vw, 3rem);
+    line-height: 1.15;
+    margin-bottom: 1rem;
+    font-weight: 400;
+  }
+  .hero h1 em {
+    font-style: italic;
+    color: var(--gold-light);
+  }
+  .hero p {
+    color: rgba(255,255,255,0.7);
+    font-size: 1.05rem;
+    line-height: 1.65;
+    margin-bottom: 2rem;
+  }
+  .hero-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    background: rgba(255,255,255,0.1);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+  }
+  .hero-stat {
+    background: rgba(255,255,255,0.04);
+    padding: 1.2rem 1rem;
+    text-align: center;
+  }
+  .hero-stat strong {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: var(--gold-light);
+  }
+  .hero-stat small {
+    color: rgba(255,255,255,0.5);
+    font-size: 0.75rem;
+  }
+
+  /* Quick-calc card in hero */
+  .hero-calc-card {
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 16px;
+    padding: 2rem;
+  }
+  .hero-calc-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--gold-light);
+    margin-bottom: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+
+  /* ── SECTION COMMON ── */
+  section { padding: 4rem 2rem; }
+  .section-inner { max-width: 1100px; margin: 0 auto; }
+  .section-label {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--gold);
+    margin-bottom: 0.6rem;
+  }
+  .section-title {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(1.7rem, 3vw, 2.3rem);
+    font-weight: 400;
+    margin-bottom: 1rem;
+    color: var(--navy);
+  }
+  .section-sub {
+    color: var(--steel);
+    max-width: 580px;
+    font-size: 1rem;
+    line-height: 1.65;
+    margin-bottom: 2.5rem;
+  }
+
+  /* ── CALCULATOR ── */
+  #calculator { background: #fff; }
+
+  .calc-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .calc-form { display: flex; flex-direction: column; gap: 1.2rem; }
+
+  .form-group { display: flex; flex-direction: column; gap: 6px; }
+  .form-group label {
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: var(--steel);
+    letter-spacing: 0.02em;
+  }
+  .form-group select, .form-group input {
+    padding: 11px 14px;
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    color: var(--text);
+    background: var(--cream);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    appearance: none;
+    -webkit-appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%234A5568' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+  }
+  .form-group select:focus, .form-group input:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(13,31,60,0.1);
+  }
+  .form-group input {
+    background-image: none;
+  }
+
+  .calc-btn {
+    background: var(--navy);
+    color: #fff;
+    border: none;
+    padding: 14px 2rem;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+    text-transform: uppercase;
+  }
+  .calc-btn:hover { background: var(--navy-mid); }
+  .calc-btn:active { transform: scale(0.98); }
+
+  .calc-result {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 2.5rem;
+    color: #fff;
+    position: sticky;
+    top: 80px;
+  }
+  .calc-result h3 {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 0.3rem;
+  }
+  .calc-result .pay-amount {
+    font-family: 'Outfit', sans-serif;
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--gold-light);
+    line-height: 1;
+    margin: 0.3rem 0 0.5rem;
+  }
+  .calc-result .pay-label {
+    font-size: 0.85rem;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 2rem;
+  }
+  .result-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+    font-size: 0.88rem;
+  }
+  .result-row:last-child { border-bottom: none; }
+  .result-row .label { color: rgba(255,255,255,0.55); }
+  .result-row .value { color: #fff; font-weight: 500; }
+  .result-row .value.good { color: #6ee7a0; }
+  .result-row .value.warn { color: #fcd34d; }
+
+  .annual-box {
+    margin-top: 1.5rem;
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.25);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .annual-box .al { font-size: 0.8rem; color: rgba(255,255,255,0.55); }
+  .annual-box .av {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 800;
+    color: var(--gold-light);
+  }
+
+  /* ── PAY TABLE ── */
+  #pay-table { background: var(--smoke); }
+
+  .tab-bar {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+  }
+  .tab-btn {
+    padding: 7px 18px;
+    border-radius: 50px;
+    border: 1.5px solid #CCC5B8;
+    background: transparent;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.83rem;
+    font-weight: 500;
+    color: var(--steel);
+    cursor: pointer;
+    transition: all 0.18s;
+  }
+  .tab-btn.active, .tab-btn:hover {
+    background: var(--navy);
+    color: #fff;
+    border-color: var(--navy);
+  }
+
+  .pay-table-wrap {
+    overflow-x: auto;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    font-size: 0.875rem;
+  }
+  thead tr {
+    background: var(--navy);
+    color: #fff;
+  }
+  th {
+    padding: 12px 16px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 0.78rem;
+    letter-spacing: 0.06em;
+    text-align: left;
+    white-space: nowrap;
+  }
+  td {
+    padding: 11px 16px;
+    border-bottom: 1px solid #EEE8DF;
+    color: var(--text);
+    vertical-align: middle;
+  }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #FBF7F0; }
+  td.rating-cell {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+  }
+  td.amount {
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .rating-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 6px;
+    padding: 3px 10px;
+    font-size: 0.85rem;
+  }
+  .rating-badge.p100 { background: var(--gold); color: var(--navy); }
+  .rating-badge.p90 { background: #1a3a6b; }
+  .rating-badge.p80 { background: #1e4080; }
+  .rating-badge.p70 { background: #234898; }
+  .rating-badge.p60 { background: #2851aa; }
+  .rating-badge.p50 { background: #2e5dbf; }
+
+  .bar-cell { min-width: 120px; }
+  .bar-wrap {
+    height: 6px;
+    background: #EEE8DF;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+  .bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold) 0%, var(--navy) 100%);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+  }
+
+  /* ── CONDITIONS ── */
+  #conditions { background: #fff; }
+
+  .search-bar {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+  }
+  .search-input-wrap {
+    flex: 1;
+    min-width: 220px;
+    position: relative;
+  }
+  .search-input-wrap svg {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 18px; height: 18px;
+    stroke: var(--muted);
+  }
+  .search-input {
+    width: 100%;
+    padding: 11px 14px 11px 44px;
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.95rem;
+    background: var(--cream);
+    color: var(--text);
+    transition: border-color 0.2s;
+  }
+  .search-input:focus {
+    outline: none;
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px rgba(13,31,60,0.1);
+  }
+  .filter-select {
+    padding: 11px 40px 11px 14px;
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    background: var(--cream);
+    color: var(--text);
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%234A5568' d='M6 8L0 0h12z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    cursor: pointer;
+  }
+
+  .conditions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.2rem;
+  }
+  .condition-card {
+    border: 1.5px solid #E5DFD4;
+    border-radius: 12px;
+    padding: 1.4rem;
+    background: var(--cream);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    cursor: pointer;
+    position: relative;
+  }
+  .condition-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 6px 24px rgba(201,168,76,0.15);
+    transform: translateY(-2px);
+  }
+  .condition-card.hidden { display: none; }
+  .cond-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 0.8rem;
+  }
+  .cond-name {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    color: var(--navy);
+    line-height: 1.3;
+    flex: 1;
+    padding-right: 1rem;
+  }
+  .cond-rating {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 6px;
+    padding: 2px 10px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    white-space: nowrap;
+    font-family: 'Outfit', sans-serif;
+  }
+  .cond-category {
+    font-size: 0.72rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 0.5rem;
+  }
+  .cond-info {
+    font-size: 0.85rem;
+    color: var(--steel);
+    line-height: 1.5;
+  }
+  .cond-secondary {
+    margin-top: 0.8rem;
+    padding-top: 0.8rem;
+    border-top: 1px solid #E5DFD4;
+    font-size: 0.78rem;
+    color: var(--muted);
+  }
+  .cond-secondary strong { color: var(--navy); }
+
+  .no-results {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 3rem;
+    color: var(--muted);
+    font-size: 1rem;
+    display: none;
+  }
+
+  /* ── COMBINED RATINGS ── */
+  #combined { background: var(--smoke); }
+
+  .combined-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 2.5rem;
+    align-items: start;
+  }
+
+  .ratings-adder { display: flex; flex-direction: column; gap: 1rem; }
+
+  .ratings-list { display: flex; flex-direction: column; gap: 8px; min-height: 60px; }
+
+  .rating-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    border: 1px solid #E5DFD4;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+  .rating-item .ri-label {
+    font-size: 0.88rem;
+    font-weight: 500;
+    color: var(--text);
+  }
+  .rating-item .ri-pct {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    color: var(--navy);
+  }
+  .rating-item button {
+    background: none;
+    border: none;
+    color: #C0392B;
+    cursor: pointer;
+    font-size: 1.1rem;
+    line-height: 1;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+  .rating-item button:hover { background: #fdecea; }
+
+  .add-rating-row {
+    display: flex;
+    gap: 8px;
+  }
+  .add-rating-row select, .add-rating-row input {
+    flex: 1;
+    padding: 10px 12px;
+    border: 1.5px solid #DDD8CE;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    background: var(--cream);
+    color: var(--text);
+  }
+  .add-rating-row select { appearance: none; }
+  .add-btn {
+    padding: 10px 18px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    white-space: nowrap;
+  }
+  .add-btn:hover { background: var(--gold-light); }
+
+  .combined-result-panel {
+    background: var(--navy);
+    border-radius: 16px;
+    padding: 2.5rem;
+    color: #fff;
+    position: sticky;
+    top: 80px;
+  }
+
+  .comb-title {
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 1.5rem;
+  }
+
+  .va-math-visual {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 1.5rem;
+  }
+  .va-math-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
+  }
+  .va-math-row .label { color: rgba(255,255,255,0.5); }
+  .va-math-row .val { font-weight: 600; color: #fff; }
+  .va-math-row .val.gold { color: var(--gold-light); }
+
+  .combined-final {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 12px;
+    padding: 1.2rem 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .combined-final .cf-label { font-size: 0.75rem; color: rgba(255,255,255,0.5); letter-spacing: 0.08em; text-transform: uppercase; }
+  .combined-final .cf-pct { font-family: 'Outfit', sans-serif; font-size: 3rem; font-weight: 800; color: var(--gold-light); line-height: 1; }
+  .combined-final .cf-pay { font-size: 1.1rem; color: #fff; margin-top: 4px; }
+
+  .va-math-explainer {
+    margin-top: 1.5rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.4);
+    line-height: 1.6;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    padding-top: 1rem;
+  }
+
+  /* ── INFO CARDS ── */
+  #benefits { background: #fff; }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .benefit-card {
+    border: 1.5px solid #E5DFD4;
+    border-radius: 14px;
+    padding: 1.8rem;
+    background: var(--cream);
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+  .benefit-card:hover {
+    border-color: var(--navy);
+    box-shadow: var(--shadow);
+  }
+  .benefit-icon {
+    width: 46px; height: 46px;
+    border-radius: 10px;
+    background: var(--navy);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+  .benefit-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 0.4rem;
+    color: var(--navy);
+  }
+  .benefit-card .req {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: var(--gold);
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+  }
+  .benefit-card p {
+    font-size: 0.875rem;
+    color: var(--steel);
+    line-height: 1.6;
+  }
+
+  /* ── TDIU ── */
+  #tdiu { background: var(--smoke); }
+
+  .tdiu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+  }
+  .tdiu-text h2 { margin-bottom: 1rem; }
+  .tdiu-text p { color: var(--steel); line-height: 1.7; margin-bottom: 1rem; font-size: 0.95rem; }
+
+  .eligibility-boxes {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .elig-box {
+    background: #fff;
+    border: 1.5px solid #E5DFD4;
+    border-radius: 12px;
+    padding: 1.4rem;
+    position: relative;
+    overflow: hidden;
+  }
+  .elig-box::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 0; bottom: 0;
+    width: 4px;
+    background: var(--gold);
+  }
+  .elig-box h4 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.5rem;
+    color: var(--navy);
+  }
+  .elig-box p { font-size: 0.85rem; color: var(--steel); line-height: 1.5; }
+  .elig-box .pct {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold);
+    display: block;
+    margin-bottom: 0.3rem;
+  }
+
+  /* ── CHECKLIST ── */
+  #checklist { background: var(--navy); color: #fff; }
+  #checklist .section-title { color: #fff; }
+  #checklist .section-sub { color: rgba(255,255,255,0.6); }
+  #checklist .section-label { color: var(--gold-light); }
+
+  .checklist-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 1rem;
+  }
+  .check-item {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding: 1.2rem;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    transition: background 0.2s, border-color 0.2s;
+    cursor: pointer;
+  }
+  .check-item:hover {
+    background: rgba(255,255,255,0.08);
+    border-color: rgba(201,168,76,0.4);
+  }
+  .check-item.checked {
+    background: rgba(201,168,76,0.1);
+    border-color: rgba(201,168,76,0.4);
+  }
+  .check-box {
+    width: 22px; height: 22px;
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 5px;
+    flex-shrink: 0;
+    margin-top: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+  }
+  .check-item.checked .check-box {
+    background: var(--gold);
+    border-color: var(--gold);
+  }
+  .check-item.checked .check-box::after {
+    content: '✓';
+    color: var(--navy);
+    font-weight: 800;
+    font-size: 0.85rem;
+  }
+  .check-text h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin-bottom: 3px;
+    color: #fff;
+  }
+  .check-text p {
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+    line-height: 1.4;
+  }
+
+  .progress-bar-wrap {
+    margin-top: 2rem;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50px;
+    overflow: hidden;
+    height: 8px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--gold), var(--gold-light));
+    border-radius: 50px;
+    transition: width 0.4s ease;
+    width: 0%;
+  }
+  .progress-label {
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+    color: rgba(255,255,255,0.5);
+  }
+
+  /* ── FOOTER ── */
+  footer {
+    background: #0A1828;
+    color: rgba(255,255,255,0.5);
+    padding: 3rem 2rem;
+    font-size: 0.83rem;
+  }
+  .footer-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 3rem;
+  }
+  footer h4 {
+    color: #fff;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.85rem;
+    margin-bottom: 1rem;
+  }
+  footer p { line-height: 1.7; margin-bottom: 0.8rem; }
+  footer ul { list-style: none; display: flex; flex-direction: column; gap: 8px; }
+  footer a { color: rgba(255,255,255,0.5); text-decoration: none; transition: color 0.2s; }
+  footer a:hover { color: var(--gold-light); }
+  .footer-bottom {
+    max-width: 1100px;
+    margin: 2rem auto 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(255,255,255,0.08);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .disclaimer-box {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 8px;
+    padding: 1rem 1.4rem;
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: rgba(255,255,255,0.35);
+    margin-top: 2rem;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ── UTIL ── */
+  .tag {
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 50px;
+    font-size: 0.72rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  .tag-mental { background: #e8edf7; color: #1a3a6b; }
+  .tag-musculo { background: #e8f5ee; color: #1a6b3c; }
+  .tag-respiratory { background: #e8f0fb; color: #1a4a8b; }
+  .tag-cardio { background: #fdecea; color: #8b1a1a; }
+  .tag-neuro { background: #f5e9c4; color: #7b5e10; }
+  .tag-other { background: #f0edf7; color: #4a1a7b; }
+  .tag-burn { background: #fde8e0; color: #8b3a1a; }
+
+  /* ── HERO MINI CALCULATOR ── */
+  .mini-calc-fields { display: flex; flex-direction: column; gap: 10px; margin-bottom: 1rem; }
+  .mini-calc-fields select {
+    padding: 10px 14px;
+    border: 1.5px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.08);
+    color: #fff;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.9rem;
+    appearance: none;
+    cursor: pointer;
+  }
+  .mini-calc-fields select option { background: var(--navy); }
+  .mini-result {
+    background: rgba(201,168,76,0.15);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+    display: none;
+  }
+  .mini-result.show { display: block; }
+  .mini-result .mr-amount {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--gold-light);
+    display: block;
+    margin-bottom: 2px;
+  }
+  .mini-result .mr-label { font-size: 0.8rem; color: rgba(255,255,255,0.5); }
+  .mini-calc-btn {
+    width: 100%;
+    padding: 11px;
+    background: var(--gold);
+    color: var(--navy);
+    border: none;
+    border-radius: 8px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 0.88rem;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .mini-calc-btn:hover { background: var(--gold-light); }
+
+  /* RESPONSIVE */
+  @media (max-width: 768px) {
+    .hero-grid, .calc-container, .combined-grid, .tdiu-grid { grid-template-columns: 1fr; }
+    nav .nav-links { display: none; }
+    .footer-inner { grid-template-columns: 1fr; gap: 2rem; }
+    .conditions-grid { grid-template-columns: 1fr; }
+
+    /* Hero fixes */
+    .hero { padding: 2.5rem 1.2rem 2rem; }
+    .hero h1 { font-size: 1.75rem; }
+    .hero p { font-size: 0.95rem; }
+    .hero-badge { font-size: 0.68rem; padding: 4px 10px; letter-spacing: 0.06em; }
+
+    /* Stats — stack into single column on very small screens */
+    .hero-stats { grid-template-columns: 1fr; gap: 0; }
+    .hero-stat { padding: 0.9rem 1rem; display: flex; justify-content: space-between; align-items: center; }
+    .hero-stat strong { font-size: 1.3rem; display: inline; }
+    .hero-stat small { font-size: 0.8rem; }
+
+    /* Quick calc card */
+    .hero-calc-card { padding: 1.4rem; margin-top: 0; }
+    .hero-calc-card h3 { font-size: 0.85rem; margin-bottom: 1rem; }
+    .mini-calc-fields select { font-size: 0.85rem; padding: 9px 12px; }
+    .mini-calc-btn { font-size: 0.82rem; padding: 10px; }
+    .mini-result .mr-amount { font-size: 1.6rem; }
+  }
+
+  @media (max-width: 400px) {
+    .hero { padding: 2rem 1rem 1.5rem; }
+    .hero h1 { font-size: 1.5rem; }
+    .hero-calc-card { padding: 1.2rem; }
+  }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <a href="#" class="nav-logo">
+    <svg class="star-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+    VA Disability <span>Hub</span>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#calculator">Pay Calculator</a></li>
+    <li><a href="#pay-table">2026 Pay Table</a></li>
+    <li><a href="#conditions">Conditions</a></li>
+    <li><a href="#combined">Combined Ratings</a></li>
+    <li><a href="#benefits">Benefits</a></li>
+    <li><a href="#tdiu">TDIU</a></li>
+    <li><a href="#checklist">Claim Checklist</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-grid">
+    <div class="hero-left">
+      <div class="hero-badge">⭐ 2026 Updated Rates · 2.8% COLA Applied</div>
+      <h1>Your VA Disability<br><em>Benefits, Decoded</em></h1>
+      <p>The most comprehensive database of VA disability ratings, pay rates, conditions, and benefits — built for veterans, by people who care about getting it right.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><strong>18M+</strong><small>Veterans in US</small></div>
+        <div class="hero-stat"><strong>$3,938</strong><small>Max monthly pay</small></div>
+        <div class="hero-stat"><strong>700+</strong><small>Rated conditions</small></div>
+      </div>
+    </div>
+    <div class="hero-calc-card">
+      <h3>⚡ Quick Pay Lookup</h3>
+      <div class="mini-calc-fields">
+        <select id="mini-rating">
+          <option value="">Select your disability rating…</option>
+          <option value="10">10%</option>
+          <option value="20">20%</option>
+          <option value="30">30%</option>
+          <option value="40">40%</option>
+          <option value="50">50%</option>
+          <option value="60">60%</option>
+          <option value="70">70%</option>
+          <option value="80">80%</option>
+          <option value="90">90%</option>
+          <option value="100">100%</option>
+        </select>
+        <select id="mini-dep">
+          <option value="alone">No dependents</option>
+          <option value="spouse">With spouse only</option>
+          <option value="spouse_child">With spouse + 1 child</option>
+          <option value="child">With child only</option>
+          <option value="parent">With 1 parent</option>
+        </select>
+      </div>
+      <button class="mini-calc-btn" onclick="miniCalc()">Calculate My Benefits</button>
+      <div class="mini-result" id="mini-result">
+        <span class="mr-amount" id="mini-amount"></span>
+        <span class="mr-label">per month · tax-free · 2026 rate</span>
+        <div style="margin-top:10px;font-size:0.8rem;color:rgba(255,255,255,0.6);" id="mini-annual"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CALCULATOR -->
+<section id="calculator">
+  <div class="section-inner">
+    <div class="section-label">Monthly Benefits</div>
+    <h2 class="section-title">VA Disability Pay Calculator</h2>
+    <p class="section-sub">Enter your rating and household details to see your exact 2026 monthly and annual compensation — including all dependent add-ons.</p>
+
+    <div class="calc-container">
+      <div class="calc-form">
+        <div class="form-group">
+          <label>Disability Rating</label>
+          <select id="calc-rating">
+            <option value="">Select rating…</option>
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+            <option value="100">100%</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Dependent Spouse?</label>
+          <select id="calc-spouse">
+            <option value="no">No spouse</option>
+            <option value="yes">Yes — has spouse</option>
+            <option value="aa">Yes — spouse receives Aid & Attendance</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Dependent Children (under 18)</label>
+          <select id="calc-children">
+            <option value="0">No children</option>
+            <option value="1">1 child</option>
+            <option value="2">2 children</option>
+            <option value="3">3 children</option>
+            <option value="4">4+ children</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Dependent Parents</label>
+          <select id="calc-parents">
+            <option value="0">No parents</option>
+            <option value="1">1 parent</option>
+            <option value="2">2 parents</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>School-Age Children (18–23, in school)</label>
+          <select id="calc-school">
+            <option value="0">None</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3+</option>
+          </select>
+        </div>
+        <button class="calc-btn" onclick="runCalculator()">Calculate My Monthly Pay →</button>
+      </div>
+
+      <div class="calc-result" id="calc-result-panel">
+        <h3>Monthly Compensation</h3>
+        <div class="pay-amount" id="result-amount">$0</div>
+        <div class="pay-label">per month · tax-free</div>
+
+        <div id="result-breakdown">
+          <div class="result-row">
+            <span class="label">Base rate (alone)</span>
+            <span class="value" id="r-base">—</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Spouse add-on</span>
+            <span class="value" id="r-spouse">—</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Children add-on</span>
+            <span class="value" id="r-children">—</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Parent add-on</span>
+            <span class="value" id="r-parents">—</span>
+          </div>
+          <div class="result-row">
+            <span class="label">Tax status</span>
+            <span class="value good">Tax-Free Federal</span>
+          </div>
+          <div class="result-row">
+            <span class="label">COLA applied</span>
+            <span class="value good">2.8% (2026)</span>
+          </div>
+        </div>
+
+        <div class="annual-box">
+          <div class="al">Annual tax-free income</div>
+          <div class="av" id="result-annual">$0 / yr</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PAY TABLE -->
+<section id="pay-table">
+  <div class="section-inner">
+    <div class="section-label">2026 Official Rates</div>
+    <h2 class="section-title">Complete VA Pay Rate Tables</h2>
+    <p class="section-sub">Official 2026 rates after 2.8% COLA adjustment, effective December 1, 2025. All amounts are monthly and tax-free.</p>
+
+    <div class="tab-bar">
+      <button class="tab-btn active" onclick="showTable('alone')">Veteran Alone</button>
+      <button class="tab-btn" onclick="showTable('spouse')">With Spouse</button>
+      <button class="tab-btn" onclick="showTable('spouse_child')">Spouse + 1 Child</button>
+      <button class="tab-btn" onclick="showTable('child')">Child Only</button>
+    </div>
+
+    <div class="pay-table-wrap">
+      <table id="main-table">
+        <thead>
+          <tr>
+            <th>Rating</th>
+            <th>Monthly Pay</th>
+            <th>Annual Pay</th>
+            <th>vs 10% Baseline</th>
+            <th>Pay Scale</th>
+          </tr>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- CONDITIONS DATABASE -->
+<section id="conditions">
+  <div class="section-inner">
+    <div class="section-label">Condition Database</div>
+    <h2 class="section-title">VA Disability Ratings by Condition</h2>
+    <p class="section-sub">Search common conditions the VA rates. Typical ratings shown — actual awards vary based on severity and documentation.</p>
+
+    <div class="search-bar">
+      <div class="search-input-wrap">
+        <svg fill="none" viewBox="0 0 24 24" stroke-width="2"><circle cx="11" cy="11" r="8"/><path stroke-linecap="round" d="M21 21l-4.35-4.35"/></svg>
+        <input type="text" class="search-input" id="cond-search" placeholder="Search condition (e.g. PTSD, knee, tinnitus…)" oninput="filterConditions()">
+      </div>
+      <select class="filter-select" id="cond-cat" onchange="filterConditions()">
+        <option value="">All Categories</option>
+        <option value="mental">Mental Health</option>
+        <option value="musculo">Musculoskeletal</option>
+        <option value="respiratory">Respiratory</option>
+        <option value="cardio">Cardiovascular</option>
+        <option value="neuro">Neurological</option>
+        <option value="burn">Burn Pit / Toxic Exposure</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div class="conditions-grid" id="conditions-grid">
+      <!-- populated by JS -->
+    </div>
+    <div class="no-results" id="no-results">No conditions matched your search. Try a different term.</div>
+  </div>
+</section>
+
+<!-- COMBINED RATINGS -->
+<section id="combined">
+  <div class="section-inner">
+    <div class="section-label">VA Math Explained</div>
+    <h2 class="section-title">Combined Disability Rating Calculator</h2>
+    <p class="section-sub">The VA doesn't add ratings — it uses "VA math." Add your conditions below to see your real combined rating and monthly pay.</p>
+
+    <div class="combined-grid">
+      <div class="ratings-adder">
+        <div class="ratings-list" id="ratings-list">
+          <div style="color:var(--muted);font-size:0.85rem;padding:1rem 0;">Add your disability ratings below ↓</div>
+        </div>
+
+        <div class="add-rating-row">
+          <input type="text" placeholder="Condition name (optional)" id="add-cond-name">
+          <select id="add-cond-pct">
+            <option value="10">10%</option>
+            <option value="20">20%</option>
+            <option value="30">30%</option>
+            <option value="40">40%</option>
+            <option value="50">50%</option>
+            <option value="60">60%</option>
+            <option value="70">70%</option>
+            <option value="80">80%</option>
+            <option value="90">90%</option>
+            <option value="100">100%</option>
+          </select>
+          <button class="add-btn" onclick="addRating()">+ Add</button>
+        </div>
+
+        <div style="background:#fff;border:1px solid #E5DFD4;border-radius:10px;padding:1.2rem;font-size:0.83rem;color:var(--steel);line-height:1.6;">
+          <strong style="color:var(--navy);">How VA Math Works:</strong> The VA treats you as "100% whole." Each disability reduces your "whole" amount. So if you have a 50% rating, 50% remains. A second 30% rating is applied to that 50%, adding 15% — not 30%. This "whole person" method always results in less than the sum of your ratings.
+        </div>
+      </div>
+
+      <div class="combined-result-panel">
+        <div class="comb-title">Combined Rating Calculation</div>
+
+        <div class="va-math-visual" id="va-math-visual">
+          <div class="va-math-row"><span class="label">Start with whole person</span><span class="val">100%</span></div>
+          <div class="va-math-row"><span class="label">Add ratings to see VA math…</span><span class="val">—</span></div>
+        </div>
+
+        <div class="combined-final">
+          <span class="cf-label">Combined VA Rating</span>
+          <span class="cf-pct" id="combined-pct">—%</span>
+          <span class="cf-pay" id="combined-pay">Add ratings above to calculate</span>
+        </div>
+
+        <div class="va-math-explainer" id="combined-explainer"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section id="benefits">
+  <div class="section-inner">
+    <div class="section-label">Beyond Monthly Pay</div>
+    <h2 class="section-title">VA Benefits by Rating Level</h2>
+    <p class="section-sub">Your rating unlocks far more than monthly compensation. Here's what you qualify for at each tier.</p>
+
+    <div class="benefits-grid">
+      <div class="benefit-card">
+        <div class="benefit-icon">🏥</div>
+        <div class="req">10%+ Rating Required</div>
+        <h3>VA Healthcare</h3>
+        <p>Free or low-cost medical care, prescriptions, mental health services, and specialist visits through the VA healthcare system.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💊</div>
+        <div class="req">Any Service-Connected</div>
+        <h3>Free Prescriptions</h3>
+        <p>No copay for prescriptions related to your service-connected disability. Other prescriptions may have minimal copays based on income.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🎓</div>
+        <div class="req">Any Rating</div>
+        <h3>Chapter 31 VR&E</h3>
+        <p>Vocational Rehabilitation & Employment benefits for education, job training, and career counseling related to your disability.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏠</div>
+        <div class="req">30%+ Rating</div>
+        <h3>Dependent Add-Ons</h3>
+        <p>Monthly pay increases for each dependent spouse, child, or parent added to your award at 30% or higher rating.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🚗</div>
+        <div class="req">50%+ Rating</div>
+        <h3>State Vehicle Tax Exemptions</h3>
+        <p>Most states offer full or partial vehicle registration and property tax exemptions for veterans at 50% or higher. Varies by state.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🏡</div>
+        <div class="req">50%+ Rating</div>
+        <h3>Property Tax Exemptions</h3>
+        <p>Many states offer significant property tax reductions or full exemptions for disabled veterans at 50%+. Check your state's program.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">💼</div>
+        <div class="req">100% Rating</div>
+        <h3>CHAMPVA Coverage</h3>
+        <p>Your eligible family members may receive comprehensive health coverage through the Civilian Health and Medical Program at 100% P&T.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">🎫</div>
+        <div class="req">100% P&T</div>
+        <h3>State & Federal Perks</h3>
+        <p>Free national park access, commissary/PX privileges, commissary shopping rights, free hunting/fishing licenses in many states, and more.</p>
+      </div>
+      <div class="benefit-card">
+        <div class="benefit-icon">📋</div>
+        <div class="req">Any Rating</div>
+        <h3>Life Insurance (VGLI)</h3>
+        <p>Veterans' Group Life Insurance is available regardless of health status. Coverage from $10,000 up to $500,000.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TDIU -->
+<section id="tdiu">
+  <div class="section-inner">
+    <div class="tdiu-grid">
+      <div class="tdiu-text">
+        <div class="section-label">Don't Leave Money on the Table</div>
+        <h2 class="section-title">TDIU: Get Paid at 100% Even Without a 100% Rating</h2>
+        <p>Total Disability based on Individual Unemployability (TDIU) allows veterans to receive 100% VA compensation ($3,938.58/month) even if their combined rating is below 100% — if their disability prevents them from working.</p>
+        <p>This is one of the most overlooked benefits in the VA system. Thousands of veterans are being underpaid because they don't know they qualify.</p>
+        <p><strong>The key question:</strong> Can your service-connected disability prevent you from securing or maintaining substantially gainful employment?</p>
+      </div>
+      <div class="eligibility-boxes">
+        <div class="elig-box">
+          <span class="pct">70%</span>
+          <h4>Single Disability TDIU</h4>
+          <p>If you have one service-connected disability rated at 70% or higher that prevents you from working, you may qualify for TDIU — paid at the full 100% rate.</p>
+        </div>
+        <div class="elig-box">
+          <span class="pct">60% + 40%</span>
+          <h4>Combined Disability TDIU</h4>
+          <p>If your combined rating is 70%+ with at least one condition at 40%, you may qualify. The total must reach 70% using VA's combined math.</p>
+        </div>
+        <div class="elig-box" style="--gold: #C0392B;">
+          <span class="pct" style="color:var(--navy);">$3,938</span>
+          <h4>TDIU Pay Rate (2026)</h4>
+          <p>If approved for TDIU, you receive the full 100% rate — $3,938.58/month for a veteran alone — tax-free. Plus applicable dependent add-ons.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CHECKLIST -->
+<section id="checklist">
+  <div class="section-inner">
+    <div class="section-label">Action Plan</div>
+    <h2 class="section-title">VA Claim Filing Checklist</h2>
+    <p class="section-sub">Track your progress. Click each item to mark it complete.</p>
+
+    <div class="checklist-grid" id="checklist-grid">
+      <!-- populated by JS -->
+    </div>
+
+    <div class="progress-bar-wrap"><div class="progress-fill" id="progress-fill"></div></div>
+    <div class="progress-label" id="progress-label">0 of 12 steps completed</div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div>
+      <h4>VA Disability Hub</h4>
+      <p>The most comprehensive free resource for veterans navigating the VA disability system. We update all rates and information as official VA data is released.</p>
+      <p>2026 rates reflect the official 2.8% COLA adjustment effective December 1, 2025.</p>
+    </div>
+    <div>
+      <h4>Tools</h4>
+      <ul>
+        <li><a href="#calculator">Pay Calculator</a></li>
+        <li><a href="#pay-table">2026 Pay Tables</a></li>
+        <li><a href="#conditions">Condition Database</a></li>
+        <li><a href="#combined">Combined Rating Tool</a></li>
+        <li><a href="#checklist">Claim Checklist</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="https://www.va.gov/disability/" target="_blank">VA.gov Official Site</a></li>
+        <li><a href="https://www.benefits.va.gov/compensation/" target="_blank">VA Compensation Info</a></li>
+        <li><a href="#tdiu">TDIU Guide</a></li>
+        <li><a href="#benefits">Benefits by Rating</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="disclaimer-box">
+    <strong>Disclaimer:</strong> VA Disability Hub is an independent informational resource and is not affiliated with the U.S. Department of Veterans Affairs. All pay rates displayed reflect official 2026 figures from VA.gov. This site does not provide legal advice. For personalized claims assistance, consult an accredited VA claims agent, VSO (Veterans Service Organization), or VA-accredited attorney. Actual benefit amounts may vary based on individual circumstances, rating decisions, and dependency status.
+  </div>
+
+  <div class="footer-bottom">
+    <span>© 2026 VA Disability Hub. For informational purposes only.</span>
+    <span>Data sourced from VA.gov · Updated for 2026 COLA (2.8%)</span>
+  </div>
+</footer>
+
+<script>
+// ── 2026 PAY DATA (official VA rates) ──
+const payData = {
+  alone:        { 10:180.42, 20:356.71, 30:553.31, 40:796.05, 50:1133.68, 60:1433.37, 70:1808.45, 80:2102.15, 90:2362.30, 100:3938.58 },
+  spouse:       { 10:180.42, 20:356.71, 30:619.31, 40:882.05, 50:1238.68, 60:1558.37, 70:1961.45, 80:2277.15, 90:2559.30, 100:4158.17 },
+  spouse_child: { 10:180.42, 20:356.71, 30:673.31, 40:952.05, 50:1322.68, 60:1659.37, 70:2074.45, 80:2408.15, 90:2708.30, 100:4318.97 },
+  child:        { 10:180.42, 20:356.71, 30:607.31, 40:866.05, 50:1218.68, 60:1534.37, 70:1905.45, 80:2215.15, 90:2491.30, 100:4114.82 },
+  parent1:      { 10:180.42, 20:356.71, 30:620.31, 40:887.05, 50:1248.68, 60:1574.37, 70:1931.45, 80:2242.15, 90:2520.30, 100:4114.82 },
+};
+
+// Spouse/child add-ons by rating
+const addOns = {
+  spouse:   { 30:66, 40:86, 50:105, 60:125, 70:153, 80:175, 90:197, 100:219 },
+  child:    { 30:54, 40:70, 50:85, 60:100, 70:97, 80:113, 90:129, 100:180 },
+  parent:   { 30:67, 40:87, 50:107, 60:126, 70:123, 80:140, 90:158, 100:176 },
+  schoolKid:{ 30:81, 40:105, 50:131, 60:156, 70:152, 80:177, 90:201, 100:227 },
+  aaSpouse: { 30:52, 40:68, 50:83, 60:99, 70:141, 80:161, 90:181, 100:201 }
+};
+
+// ── MINI CALC ──
+function miniCalc() {
+  const rating = parseInt(document.getElementById('mini-rating').value);
+  const dep = document.getElementById('mini-dep').value;
+  if (!rating) return;
+  let amount;
+  if (dep === 'alone') amount = payData.alone[rating];
+  else if (dep === 'spouse') amount = payData.spouse[rating] || payData.alone[rating];
+  else if (dep === 'spouse_child') amount = payData.spouse_child[rating] || payData.alone[rating];
+  else if (dep === 'child') amount = payData.child[rating] || payData.alone[rating];
+  else if (dep === 'parent') amount = payData.parent1[rating] || payData.alone[rating];
+  else amount = payData.alone[rating];
+
+  const annual = (amount * 12).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+  document.getElementById('mini-amount').textContent = '$' + amount.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById('mini-annual').textContent = '$' + annual + '/year tax-free';
+  document.getElementById('mini-result').classList.add('show');
+}
+
+// ── MAIN CALCULATOR ──
+function runCalculator() {
+  const rating = parseInt(document.getElementById('calc-rating').value);
+  if (!rating) { alert('Please select a disability rating.'); return; }
+  const spouse = document.getElementById('calc-spouse').value;
+  const children = parseInt(document.getElementById('calc-children').value);
+  const parents = parseInt(document.getElementById('calc-parents').value);
+  const school = parseInt(document.getElementById('calc-school').value);
+
+  let base = payData.alone[rating];
+  let spouseAdd = 0, childAdd = 0, parentAdd = 0;
+
+  if (rating >= 30) {
+    if (spouse === 'yes') spouseAdd = addOns.spouse[rating] || 0;
+    if (spouse === 'aa') spouseAdd = (addOns.spouse[rating] || 0) + (addOns.aaSpouse[rating] || 0);
+    if (children > 0) {
+      const perChild = addOns.child[rating] || 0;
+      childAdd += perChild * Math.min(children, 4);
+    }
+    if (school > 0) childAdd += (addOns.schoolKid[rating] || 0) * Math.min(school, 3);
+    if (parents > 0) parentAdd = (addOns.parent[rating] || 0) * Math.min(parents, 2);
+  }
+
+  const total = base + spouseAdd + childAdd + parentAdd;
+  const annual = (total * 12).toLocaleString('en-US', {minimumFractionDigits:0, maximumFractionDigits:0});
+
+  document.getElementById('result-amount').textContent = '$' + total.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',');
+  document.getElementById('result-annual').textContent = '$' + annual + ' / yr';
+  document.getElementById('r-base').textContent = '$' + base.toFixed(2);
+  document.getElementById('r-spouse').textContent = spouseAdd > 0 ? '+$' + spouseAdd.toFixed(0) : '—';
+  document.getElementById('r-children').textContent = childAdd > 0 ? '+$' + childAdd.toFixed(0) : '—';
+  document.getElementById('r-parents').textContent = parentAdd > 0 ? '+$' + parentAdd.toFixed(0) : '—';
+}
+
+// ── PAY TABLE ──
+let activeTable = 'alone';
+function showTable(type) {
+  activeTable = type;
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  event.target.classList.add('active');
+  renderTable();
+}
+
+function renderTable() {
+  const data = payData[activeTable];
+  const baseline = payData.alone[10];
+  const max = payData.alone[100];
+  let html = '';
+  const ratings = [10,20,30,40,50,60,70,80,90,100];
+  ratings.forEach(r => {
+    const v = data[r] || payData.alone[r];
+    const annual = (v*12).toLocaleString('en-US',{maximumFractionDigits:0});
+    const mult = ((v/baseline)*100).toFixed(0);
+    const barPct = Math.round((v/max)*100);
+    const cls = r===100?'p100':r===90?'p90':r===80?'p80':r===70?'p70':r===60?'p60':r===50?'p50':'';
+    html += `
+      <tr>
+        <td class="rating-cell"><span class="rating-badge ${cls}">${r}%</span></td>
+        <td class="amount">$${v.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',')}</td>
+        <td>$${annual}/yr</td>
+        <td>${r===10?'Baseline':mult+'% of 10%'}</td>
+        <td class="bar-cell"><div class="bar-wrap"><div class="bar-fill" style="width:${barPct}%"></div></div></td>
+      </tr>`;
+  });
+  document.getElementById('table-body').innerHTML = html;
+}
+renderTable();
+
+// ── CONDITIONS DATABASE ──
+const conditions = [
+  { name:'PTSD', cat:'mental', tag:'tag-mental', rating:'10–100%', info:'Rating based on social/occupational impairment. 70% is most common award for moderate-severe symptoms.', secondary:'Common secondaries: sleep apnea, depression, anxiety, hypertension' },
+  { name:'Major Depressive Disorder', cat:'mental', tag:'tag-mental', rating:'10–100%', info:'Rated on frequency and severity of depressive episodes and occupational/social impact.', secondary:'Often secondary to PTSD or other mental health conditions' },
+  { name:'Tinnitus', cat:'other', tag:'tag-other', rating:'10%', info:'Always rated 10% — the most commonly claimed VA condition. Single rating regardless of severity.', secondary:'Can be primary or secondary to noise exposure' },
+  { name:'Sleep Apnea', cat:'respiratory', tag:'tag-respiratory', rating:'0–100%', info:'50% with required use of breathing device (CPAP). Very common secondary to PTSD.', secondary:'Secondary to PTSD, obesity, or other service-connected conditions' },
+  { name:'Lumbar Spine (Low Back)', cat:'musculo', tag:'tag-musculo', rating:'10–100%', info:'Rated on range of motion. 10% most common. 40% if severe with neurological involvement.', secondary:'Can cause secondary hip, knee, or leg radiculopathy' },
+  { name:'Knee (Patellofemoral Syndrome)', cat:'musculo', tag:'tag-musculo', rating:'10–30%', info:'Rated on range of motion limitation, instability, and functional loss. 10–20% most common.', secondary:'Common in infantry, airborne, and special operations' },
+  { name:'Radiculopathy (Nerve Pain)', cat:'neuro', tag:'tag-neuro', rating:'10–60%', info:'Rated per extremity based on functional loss. Can be secondary to back or neck conditions.', secondary:'Often secondary to lumbar or cervical spine conditions' },
+  { name:'Hypertension', cat:'cardio', tag:'tag-cardio', rating:'10–60%', info:'10% very common. 20% if diastolic 110+ or systolic 200+. Can be secondary to PTSD or obesity.', secondary:'Common secondary to PTSD, sleep apnea, or kidney disease' },
+  { name:'Hearing Loss', cat:'other', tag:'tag-other', rating:'0–100%', info:'Rated using a chart of speech recognition and pure tone average. 0% common; higher with severe loss.', secondary:'Evaluated alongside tinnitus claim' },
+  { name:'Migraine Headaches', cat:'neuro', tag:'tag-neuro', rating:'0–50%', info:'50% with very frequent, completely prostrating attacks. 30% most common for moderate migraines.', secondary:'Can be secondary to TBI, PTSD, or cervical spine conditions' },
+  { name:'Traumatic Brain Injury (TBI)', cat:'neuro', tag:'tag-neuro', rating:'0–100%', info:'Complex rating based on cognitive, emotional, and physical symptoms across 10 facets.', secondary:'Common secondaries: PTSD, sleep disorders, headaches, depression' },
+  { name:'Diabetes (Type 2)', cat:'other', tag:'tag-other', rating:'10–100%', info:'20% if managed by diet alone. 40% if insulin-dependent. Presumptive for Agent Orange vets.', secondary:'Can cause secondary peripheral neuropathy, retinopathy, kidney disease' },
+  { name:'Obstructive Sleep Apnea', cat:'respiratory', tag:'tag-respiratory', rating:'0–100%', info:'50% if CPAP required. 30% if treatment not required. Frequently secondary to PTSD or obesity.', secondary:'Very common secondary to PTSD — well-established nexus' },
+  { name:'Chronic Sinusitis', cat:'respiratory', tag:'tag-respiratory', rating:'0–30%', info:'10% most common. Presumptive for burn pit/Gulf War veterans under PACT Act.', secondary:'Burn pit exposure presumptive condition' },
+  { name:'Ischemic Heart Disease', cat:'cardio', tag:'tag-cardio', rating:'10–100%', info:'Presumptive for Agent Orange veterans. Rating based on ejection fraction and METs on stress testing.', secondary:'Presumptive Agent Orange condition' },
+  { name:'GERD / Acid Reflux', cat:'other', tag:'tag-other', rating:'10–30%', info:'10% if controlled with medication. Can be secondary to PTSD, NSAIDs, or other conditions.', secondary:'Common secondary to PTSD, sleep apnea, or anxiety' },
+  { name:'Peripheral Neuropathy', cat:'neuro', tag:'tag-neuro', rating:'10–40%', info:'Rated per extremity. Agent Orange presumptive for Type 2 diabetes-related neuropathy.', secondary:'Common secondary to diabetes or back conditions' },
+  { name:'Cervical Spine (Neck)', cat:'musculo', tag:'tag-musculo', rating:'10–100%', info:'Rated on range of motion limitation. 10% most common. Can cause secondary radiculopathy.', secondary:'Can cause secondary headaches and arm radiculopathy' },
+  { name:'Shoulder Conditions', cat:'musculo', tag:'tag-musculo', rating:'20–30%', info:'Rated on range of motion. 20% very common for dominant arm, 20% for non-dominant.', secondary:'Common in infantry, aviation, combat arms' },
+  { name:'Asthma', cat:'respiratory', tag:'tag-respiratory', rating:'10–100%', info:'Presumptive for burn pit/Gulf War veterans. 30% most common with daily medication.', secondary:'PACT Act presumptive — no nexus letter needed' },
+  { name:'Burn Pit Exposure Cancers', cat:'burn', tag:'tag-burn', rating:'Varies', info:'PACT Act (2022) added 23 presumptive cancers for veterans who served in burn pit locations (SW Asia post-9/11).', secondary:'File immediately — no nexus letter required, presumptive coverage' },
+  { name:'Gulf War Syndrome', cat:'burn', tag:'tag-burn', rating:'10–100%', info:'Undiagnosed illness presumptive for Gulf War vets who served in SW Asia after Aug 2, 1990.', secondary:'Covers fatigue, cognitive impairment, headaches, skin disorders' },
+  { name:'Anxiety Disorder', cat:'mental', tag:'tag-mental', rating:'10–100%', info:'Rated on degree of social and occupational impairment. Often paired with depression or PTSD.', secondary:'Can be primary or secondary to PTSD or other mental conditions' },
+  { name:'Flat Feet (Pes Planus)', cat:'musculo', tag:'tag-musculo', rating:'0–50%', info:'30% for severe bilateral with significant functional impairment.', secondary:'Can cause secondary knee, hip, or back conditions' },
+];
+
+function renderConditions(list) {
+  const grid = document.getElementById('conditions-grid');
+  grid.innerHTML = '';
+  let visCount = 0;
+  conditions.forEach((c, i) => {
+    const matches = !list || list.includes(i);
+    const div = document.createElement('div');
+    div.className = 'condition-card' + (matches ? '' : ' hidden');
+    div.innerHTML = `
+      <div class="cond-header">
+        <div class="cond-name">${c.name}</div>
+        <div class="cond-rating">${c.rating}</div>
+      </div>
+      <div class="cond-category"><span class="tag ${c.tag}">${c.cat.replace('burn','Burn Pit').replace('musculo','Musculoskeletal').replace('cardio','Cardiovascular').replace('neuro','Neurological').replace('mental','Mental Health').replace('respiratory','Respiratory').replace('other','Other')}</span></div>
+      <div class="cond-info">${c.info}</div>
+      <div class="cond-secondary"><strong>💡 Note:</strong> ${c.secondary}</div>
+    `;
+    grid.appendChild(div);
+    if (matches) visCount++;
+  });
+  document.getElementById('no-results').style.display = visCount === 0 ? 'block' : 'none';
+}
+renderConditions(null);
+
+function filterConditions() {
+  const q = document.getElementById('cond-search').value.toLowerCase();
+  const cat = document.getElementById('cond-cat').value;
+  let visible = [];
+  conditions.forEach((c, i) => {
+    const matchQ = !q || c.name.toLowerCase().includes(q) || c.info.toLowerCase().includes(q) || c.secondary.toLowerCase().includes(q);
+    const matchC = !cat || c.cat === cat;
+    if (matchQ && matchC) visible.push(i);
+  });
+  document.querySelectorAll('.condition-card').forEach((card, i) => {
+    card.classList.toggle('hidden', !visible.includes(i));
+  });
+  document.getElementById('no-results').style.display = visible.length === 0 ? 'block' : 'none';
+}
+
+// ── COMBINED RATINGS ──
+let userRatings = [];
+
+function addRating() {
+  const name = document.getElementById('add-cond-name').value.trim() || 'Condition';
+  const pct = parseInt(document.getElementById('add-cond-pct').value);
+  userRatings.push({ name, pct });
+  document.getElementById('add-cond-name').value = '';
+  renderRatingsList();
+  recalcCombined();
+}
+
+function removeRating(i) {
+  userRatings.splice(i, 1);
+  renderRatingsList();
+  recalcCombined();
+}
+
+function renderRatingsList() {
+  const el = document.getElementById('ratings-list');
+  if (userRatings.length === 0) {
+    el.innerHTML = '<div style="color:var(--muted);font-size:0.85rem;padding:1rem 0;">Add your disability ratings below ↓</div>';
+    return;
+  }
+  el.innerHTML = userRatings.map((r, i) => `
+    <div class="rating-item">
+      <span class="ri-label">${r.name}</span>
+      <span class="ri-pct">${r.pct}%</span>
+      <button onclick="removeRating(${i})">×</button>
+    </div>
+  `).join('');
+}
+
+function recalcCombined() {
+  if (userRatings.length === 0) {
+    document.getElementById('combined-pct').textContent = '—%';
+    document.getElementById('combined-pay').textContent = 'Add ratings above to calculate';
+    document.getElementById('va-math-visual').innerHTML = '<div class="va-math-row"><span class="label">Start with whole person</span><span class="val">100%</span></div><div class="va-math-row"><span class="label">Add ratings to see VA math…</span><span class="val">—</span></div>';
+    document.getElementById('combined-explainer').textContent = '';
+    return;
+  }
+
+  // Sort descending
+  const sorted = [...userRatings].sort((a,b) => b.pct - a.pct);
+  let remaining = 100;
+  let steps = [];
+
+  sorted.forEach(r => {
+    const added = remaining * (r.pct / 100);
+    remaining = remaining - added;
+    steps.push({ name: r.name, pct: r.pct, added: Math.round(added * 10) / 10, remaining: Math.round(remaining * 10) / 10 });
+  });
+
+  const rawCombined = 100 - remaining;
+  // Round to nearest 10
+  const rounded = Math.round(rawCombined / 10) * 10;
+  const capped = Math.min(rounded, 100);
+
+  let mathHTML = '<div class="va-math-row"><span class="label">Start: whole person</span><span class="val">100%</span></div>';
+  steps.forEach(s => {
+    mathHTML += `<div class="va-math-row"><span class="label">${s.name} (${s.pct}% of ${100-Math.round(steps.indexOf(s)>0?steps[steps.indexOf(s)-1].remaining:0)}% remaining)</span><span class="val">−${s.added}% → ${s.remaining}% left</span></div>`;
+  });
+  mathHTML += `<div class="va-math-row"><span class="label">Raw combined disability</span><span class="val gold">${rawCombined.toFixed(1)}% → rounded to ${capped}%</span></div>`;
+
+  document.getElementById('va-math-visual').innerHTML = mathHTML;
+  document.getElementById('combined-pct').textContent = capped + '%';
+
+  const pay = payData.alone[capped] || '—';
+  if (pay !== '—') {
+    document.getElementById('combined-pay').textContent = '$' + pay.toFixed(2).replace(/\B(?=(\d{3})+(?!\d))/g, ',') + '/month (veteran alone)';
+  } else {
+    document.getElementById('combined-pay').textContent = 'Below 10% — no compensation';
+  }
+
+  document.getElementById('combined-explainer').textContent = `VA rounds ${rawCombined.toFixed(1)}% to the nearest 10% = ${capped}%. Note: bilateral conditions and other factors can adjust this further. This tool uses standard VA math for illustrative purposes.`;
+}
+
+// ── CHECKLIST ──
+const checklistItems = [
+  { title: 'Request Service Records', desc: 'File a FOIA or use MilConnect to download your DD-214, service treatment records, and personnel files.' },
+  { title: 'Get a C&P Exam Prep Done', desc: 'Research what the VA examiner will look for. Know your Disability Benefits Questionnaire (DBQ) for each condition.' },
+  { title: 'Document All Symptoms', desc: 'Write a personal statement (buddy statement) describing daily impacts, limitations, and worst days.' },
+  { title: 'Connect with a VSO', desc: 'Veterans Service Organizations (DAV, VFW, American Legion) provide free claims assistance.' },
+  { title: 'File a Claim on VA.gov', desc: 'Submit your initial claim at VA.gov/disability or through your VSO. File ASAP — your effective date depends on it.' },
+  { title: 'Claim All Conditions', desc: 'List every condition from service, including mental health. Don\'t self-filter. Let the VA rate each one.' },
+  { title: 'Identify Secondary Conditions', desc: 'List any condition caused or worsened by a service-connected condition. E.g., sleep apnea secondary to PTSD.' },
+  { title: 'Get Buddy Statements', desc: 'Statements from fellow service members or family members supporting your claim. Use VA Form 21-4142.' },
+  { title: 'Obtain Private Nexus Letters', desc: 'A private doctor\'s letter linking your condition to service can dramatically improve claim success.' },
+  { title: 'Track Your C&P Exam', desc: 'Request a copy of your C&P exam results. Disagree with findings? You have the right to challenge them.' },
+  { title: 'Appeal If Denied', desc: 'You have 1 year to appeal a denial. Use the Supplemental Claim or HLR (Higher-Level Review) lane.' },
+  { title: 'Check for TDIU Eligibility', desc: 'If your disability prevents you from working, file for Total Disability / Individual Unemployability (VA Form 21-8940).' },
+];
+
+let checkedItems = new Set(JSON.parse(localStorage.getItem('va-checklist') || '[]'));
+
+function renderChecklist() {
+  const grid = document.getElementById('checklist-grid');
+  grid.innerHTML = checklistItems.map((item, i) => `
+    <div class="check-item ${checkedItems.has(i) ? 'checked' : ''}" onclick="toggleCheck(${i})">
+      <div class="check-box"></div>
+      <div class="check-text">
+        <h4>${item.title}</h4>
+        <p>${item.desc}</p>
+      </div>
+    </div>
+  `).join('');
+  updateProgress();
+}
+
+function toggleCheck(i) {
+  if (checkedItems.has(i)) checkedItems.delete(i);
+  else checkedItems.add(i);
+  try { localStorage.setItem('va-checklist', JSON.stringify([...checkedItems])); } catch(e) {}
+  renderChecklist();
+}
+
+function updateProgress() {
+  const total = checklistItems.length;
+  const done = checkedItems.size;
+  const pct = Math.round((done / total) * 100);
+  document.getElementById('progress-fill').style.width = pct + '%';
+  document.getElementById('progress-label').textContent = `${done} of ${total} steps completed (${pct}%)`;
+}
+
+renderChecklist();
+</script>
+</body>
+</html>
